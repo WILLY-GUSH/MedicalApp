@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/toolbarR4"
+        android:background="@drawable/shape_react_001"
+        android:padding="10dp"
+        >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_white_arrow_back_24"
+        android:id="@+id/backPage23"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addBtn23"
+        android:background="@null"
+        android:src="@drawable/ic_white_add_shopping_cart_24"
+        android:layout_alignParentRight="true"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTV23"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Product Details"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    </RelativeLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/productIconIv23"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorAccent"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_add_shopping_cart_white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productIconIv23"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/discountedNoteTv23"
+                android:background="@drawable/shape_react_005"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="10% OFF"
+                android:textColor="@color/colorGreen"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleTv23"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:text="The Product Title"
+                android:textColor="@color/colorBlack"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionTV23"
+                android:padding="5dp"
+                android:text="The Product Description"
+                android:textColor="@color/colorBlack"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/categoryIv23"
+                android:padding="5dp"
+                android:text="Category"
+                android:textColor="@color/colorBlack"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quantityIv23"
+                android:padding="5dp"
+                android:text="Quantity"
+                android:textColor="@color/colorBlack"
+                android:paddingRight="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/discountedPriceTv23"
+                    android:text="$10"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorGray02"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/originalPriceTv23"
+                    android:text="$15"
+                    android:textColor="@color/colorGray02"
+                    android:layout_toRightOf="@id/discountedPriceTv23"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

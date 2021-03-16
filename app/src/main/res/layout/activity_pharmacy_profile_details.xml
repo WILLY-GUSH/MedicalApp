@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PharmacyProfileDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:id="@+id/toolbarR2"
+        android:padding="10dp"
+        android:background="@drawable/shape_react_001">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shopName"
+            android:layout_centerHorizontal="true"
+            android:text="Pharmacy Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/editProfile"
+            android:src="@drawable/ic_white_edit_24"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:onClick="ClickEditProfile"
+            tools:ignore="OnClick"
+            />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/backMain"
+            android:src="@drawable/ic_white_arrow_back_24"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:onClick="ClickBackHome"
+            tools:ignore="OnClick" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ProductsOrders"
+            android:background="@drawable/shape_react_003"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/shopProducts"
+                android:background="@drawable/shape_react_004"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Products"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/shopOrders"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Orders"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/productsR1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarR2">
+
+            <EditText
+                android:id="@+id/searchProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@id/filterProductBtn"
+                android:background="@drawable/shape_react_002"
+                android:drawableLeft="@drawable/ic_grey_search_24"
+                android:drawablePadding="10dp"
+                android:hint="Search"
+                android:padding="10dp" />
+
+            <ImageButton
+                android:id="@+id/filterProductBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_grey_filter_24" />
+
+            <TextView
+                android:id="@+id/filterProductsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchProduct"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Showing All"
+                android:textColor="@color/colorBlack" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productsRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/filterProductsTv"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/pharmacy_product_row" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ordersR1"
+            android:layout_below="@id/toolbarR2">
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

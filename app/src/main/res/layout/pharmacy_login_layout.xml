@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        android:id="@+id/email4"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#010101" />
+
+    <EditText
+        android:id="@+id/password4"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/email4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#060606"
+        android:textColorHint="#010101" />
+
+    <EditText
+        android:id="@+id/registerNumber4"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/password4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint="RegisterNumber"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#010101" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerNumber4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:background="@drawable/button_rectangle"
+        android:text="Login"
+        android:textSize="18sp"
+        app:backgroundTint="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/registerItem2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginTop="15dp"
+        android:text="Register here"
+        android:layout_alignLeft="@id/forgotPassword"
+        android:layout_marginLeft="180dp"
+        android:textColor="#030303"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar4"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/registerItem2"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Forgot password"
+        android:textColor="#030303"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

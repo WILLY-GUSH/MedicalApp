@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        android:id="@+id/edited_Email"
+        android:background="#11000000"
+        android:textColor="#000000"
+        android:textColorHint="#010101"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:hint="Email"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editedPassword"
+        android:background="#11000000"
+        android:textColor="#060606"
+        android:textColorHint="#010101"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:hint="Password"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/edited_Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editedPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_rectangle"
+        android:text="Login"
+        android:textSize="18sp"
+        app:backgroundTint="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/registerItem"
+        android:layout_width="150dp"
+        android:textColor="#030303"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Register here" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_et3"
+        android:layout_width="200dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/wallpaper2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/userName3"
+        android:background="#11000000"
+        android:textColor="#0A0A0A"
+        android:textColorHint="#989898 "
+        android:hint="Username"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/image_et3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/email3"
+        android:background="#11000000"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#989898 "
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:hint="Email"
+        android:layout_below="@id/userName3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/password3"
+        android:background="#11000000"
+        android:textColor="#090808"
+        android:textColorHint="#989898 "
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/email3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_action_password"
+         />
+
+    <Button
+        android:id="@+id/btnLogin3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_rectangle"
+        android:text="REGISTER"
+        android:textSize="18sp"
+        app:backgroundTint="@color/material_on_background_emphasis_medium" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleLarge"
+        tools:ignore = "MissingConstraint"
+        android:layout_below="@id/btnLogin3"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to login"
+        android:id="@+id/backLogin3"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/btnLogin3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPharmacyProfile">
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_react_001"
+        android:id="@+id/toolbarRl"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PharmacyName"
+            android:layout_centerHorizontal="true"
+            android:text="Edit Pharmacy Profile"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageButton
+            android:id="@+id/LocationShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:onClick="ClickLocationShop"
+            android:src="@drawable/ic_white_my_location_24"
+            tools:ignore="OnClick" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/backMainProfile"
+            android:src="@drawable/ic_white_arrow_back_24"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:onClick="ClickBackMainProfile"
+            tools:ignore="OnClick" />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/ImageShop"
+        android:src="@drawable/ic_person_24"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="4dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/keeperName"
+        android:layout_below="@id/ImageShop"
+        android:layout_marginTop="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_react_002"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_person_24"
+        android:hint="Full Name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerNumberPharmacy"
+        android:layout_below="@id/keeperName"
+        android:layout_marginTop="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_react_002"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_app_registration_24"
+        android:hint="Register Number"
+        android:inputType="number"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/namePharmacy"
+        android:layout_below="@id/registerNumberPharmacy"
+        android:layout_marginTop="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_react_002"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_store_24"
+        android:hint="Shop Name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phonePharmacy"
+        android:layout_below="@id/namePharmacy"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_react_002"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_phone_24"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailPharmacy"
+        android:layout_below="@id/phonePharmacy"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_react_002"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_email_24"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deliveryPharmacy"
+        android:layout_below="@id/emailPharmacy"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_react_002"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_store_24"
+        android:hint="Delivery fee"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/deliveryPharmacy"
+        android:layout_marginTop="5dp"
+        android:id="@+id/addressL1"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryPharmacy"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_react_002"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_location_on_24"
+            android:hint="Country"
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statePharmacy"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_react_002"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_location_on_24"
+            android:hint="State"
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityPharmacy"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_react_002"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_location_on_24"
+            android:hint="City"
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressPharmacy"
+        android:layout_below="@id/addressL1"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_react_002"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_location_on_24"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        />
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shopOpenSwitch"
+        android:text="Shop Open"
+        android:layout_margin="5dp"
+        android:layout_below="@id/addressPharmacy"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateBtn"
+        android:text="Update"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/shopOpenSwitch"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_rectangle"
+        />
+
+    </RelativeLayout>
+
+</ScrollView>

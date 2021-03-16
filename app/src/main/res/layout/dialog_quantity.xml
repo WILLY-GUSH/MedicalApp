@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_react_001"
+        >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/productIconIv3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_shopping_cart_24"
+        app:civ_border_width="4dp"
+        app:civ_border_color="#FF000000"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTv3"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/productIconIv3"
+            android:text="Product Title"
+            android:textColor="@color/colorWhite"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pQuantity"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/titleTv3"
+            android:text="Quantity"
+            android:textColor="@color/colorWhite"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTV3"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pQuantity"
+            android:text="Description"
+            android:textColor="@color/colorWhite"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discountedNoteTv3"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="10% OFF"
+            android:textSize="10sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/shape_react_005"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/originalPriceTv3"
+        android:padding="10dp"
+        android:text="$12"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:textColor="@color/colorBlack"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/discountedPriceTv3"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/originalPriceTv3"
+        android:text="$10"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:textColor="@color/colorBlack"
+        />
+
+        <TextView
+            android:id="@+id/finalPriceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:text="Final Price"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack"
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/decrementBtn"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/ic_black_remove_circle_outline_24"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantityTv3"
+            android:text="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incrementBtn"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/ic_black_add_circle_outline_24"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/continueBtn"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Add to Cart"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"/>
+
+
+
+</LinearLayout>
